@@ -1,0 +1,17 @@
+.navigation{
+  position: fixed;
+  top: 0;
+  right: 0;
+  height: 50px;
+  left: 0;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  justify-items: center;
+  text-decoration-color: white;
+  background-color: gray;
+}
+a{
+  color: white;
+  margin-right: 10px;
+}

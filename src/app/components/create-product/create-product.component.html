@@ -1,0 +1,5 @@
+<form [formGroup]="form" (ngSubmit)="submit()">
+  <input type="text" placeholder="Product name" formControlName = "title" appFocus>
+  <p *ngIf="title.errors?.minlength">Please write more then 6 symbols (now {{title.value.length}})</p>
+  <button type="submit" class="button" *ngIf="title.value.length>5">Create</button>
+</form>

@@ -1,0 +1,17 @@
+form{
+  display: flex;
+  flex-direction: column;
+}
+input{
+  height: 50px;
+}
+.button{
+  background-color: rgba(0,999,0,0.2);
+  height: 30px;
+  width: 70px;
+  margin-top: 10px;
+  text-decoration-color: blue;
+}
+p{
+  color: red;
+}

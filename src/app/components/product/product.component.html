@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Title</title>
+  <link rel="stylesheet" href="product.component.css">
+</head>
+<body>
+<div class="productMy">
+  <img [src]="product.image" width="100px">
+  <p>{{product.title}}</p>
+  <button class="myButton" [ngClass]="{
+    'background-color: greenyellow':!details,
+    'background-color: black': details}"
+     (click)="details=!details">{{details ? 'Hide' : 'Show'}} Details</button>
+  <div *ngIf="details">
+    <p>{{product.description}}</p>
+    <p>Rate: {{product.rating.rate}}</p>
+    <p>Price: <span class="span">{{product.price | currency: 'RUB'}}</span></p>
+  </div>
+</div>
+</body>
+</html>
